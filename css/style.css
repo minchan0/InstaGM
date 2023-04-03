@@ -151,3 +151,9 @@ i {
 .selected {
   border-bottom: solid rgb(137, 13, 151) 3px;
 }
+
+#top {
+  text-align: center;
+}
+
+
