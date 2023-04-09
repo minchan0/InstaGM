@@ -1,6 +1,23 @@
 body {
   font-size: 2.5vw;
 }
+
+input {
+  font-size: 2.5vw;
+}
+
+#user_info input {
+  width: 15vw;
+}
+
+#summary input {
+  width: 15vw;
+}
+
+#profile_detail input {
+  width: 50vw;
+}
+
 #profile {
   display: grid;
   grid-template-columns: 1fr 3.5fr;

@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     let profileEditButton = document.querySelector("#profile_info button");
     let userInfo = document.querySelector("#user_info");
     let summary = document.querySelector("#summary");
-    let profileDetail = document.querySelector("#profile_datail");
+    let profileDetail = document.querySelector("#profile_detail");
     let changing = false;
 
     profileEditButton.addEventListener("click", (e) => {
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
             let _profileDetail = profileDetail.textContent;
 
             userInfo.innerHTML = "<input value=" + _userInfo + "></input>"
-            summary.innerHTML = "<input value=" + _summany + "></input>";
+            summary.innerHTML = "<input value=" + _summary + "></input>";
             profileDetail.innerHTML = "<input value=" + _profileDetail + "></input>";
 
             e.target.textContent = "프로필 편집 완료";
