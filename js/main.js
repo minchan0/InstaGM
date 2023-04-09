@@ -13,18 +13,19 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
     icn.addEventListener("click", (e) => {
         idText.textContent = prompt("새로운 아이디를 입력하세요");
-    })
+    });
 
     let profileEditButton = document.querySelector("#profile_info button");
     let userInfo = document.querySelector("#user_info");
     let summary = document.querySelector("#summary");
     let profileDetail = document.querySelector("#profile_datail");
+    let changing = false;
 
     profileEditButton.addEventListener("click", (e) => {
         if(changing) {
-            let _userInfo = userInfo.querySelector("Input").value;
-            let _summary = summary.querySelector("Input").value;
-            let _profileDetail = profileDetail.querySelector("Input").value;
+            let _userInfo = userInfo.querySelector("input").value;
+            let _summary = summary.querySelector("input").value;
+            let _profileDetail = profileDetail.querySelector("input").value;
             if(_profileDetail.startsWith("http")) {
                 _profileDetail = "<a href=" + _profileDetail + ">" + _profileDetail + "</a>";
             }
